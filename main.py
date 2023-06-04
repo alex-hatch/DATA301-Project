@@ -9,7 +9,7 @@ import time
 
 
 def loading_animation():
-    for _ in tqdm(range(6), desc="Predicting home runs", position=0, leave=True):
+    for _ in tqdm(range(4), desc="Predicting home runs", position=0, leave=True):
         time.sleep(0.5)
 
 
@@ -50,6 +50,7 @@ def knn_prediction(data):
 
     # Make prediction using the normalized new data
     prediction = knn_model.predict(new_data_scaled)
+    loading_animation()
     print("Predicted HR:", prediction[0])
     print("Mean Squared Error:", mse)
 
@@ -58,8 +59,7 @@ def load_data(file_path):
     return pd.read_csv(file_path)
 
 
-def main():
-    data = load_data("./data/Pitching.csv")
+def print_ascii():
     figlet = Figlet(font="starwars")
 
     pitching = figlet.renderText("PITCHING")
@@ -68,14 +68,23 @@ def main():
     print(pitching)
     print(statistics)
 
+
+def main():
+    data = load_data("./data/Pitching.csv")
+    print_ascii()
+
     while True:
         print("Select an option from the menu below")
         print("Type 'quit' to terminate program")
         print("\n-------------------------------\n")
-        print("1. Predict how many home runs a pitcher gives using KNN")
+        print("1. Print ascii art")
+        print("2. Predict how many home runs a pitcher gives using KNN")
+
         user_input = input(">>> ")
 
         if user_input == '1':
+            print_ascii()
+        elif user_input == '2':
             knn_prediction(data)
         elif user_input == '':
             continue
