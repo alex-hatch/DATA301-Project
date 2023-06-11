@@ -100,7 +100,7 @@ def print_ascii():
 
 
 def main():
-    data = load_data("./data/Pitching.csv")
+    data = load_data("./data/all_seasons.csv")
     print_ascii()
 
     while True:
