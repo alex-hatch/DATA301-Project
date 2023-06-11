@@ -9,12 +9,6 @@ from tqdm import tqdm
 import time
 import numpy as np
 
-
-def loading_animation():
-    for _ in tqdm(range(4), desc="Predicting home runs", position=0, leave=True):
-        time.sleep(0.5)
-
-
 def linear_regression(data):
     # Extract features and target variable
     X = data[['W', 'L', 'H']]
@@ -47,7 +41,6 @@ def linear_regression(data):
     new_data = pd.DataFrame([[user_wins, user_losses, user_hits]])
     prediction = model.predict(new_data)
 
-    loading_animation()
     print("Predicted HR from Linear Regression Model", prediction[0])
 
 
@@ -89,7 +82,6 @@ def knn_prediction(data):
 
     # Make prediction using the normalized new data
     prediction = knn_model.predict(new_data_scaled)
-    loading_animation()
     print("Predicted HR from KNN model:", prediction[0])
 
 
