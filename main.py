@@ -4,6 +4,9 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import mean_squared_error
 from sklearn.linear_model import LinearRegression
+from sklearn.metrics import precision_score
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 from pyfiglet import Figlet
 import random
@@ -31,7 +34,7 @@ def linear_regression(data, year, height):
     y = data[cols[-1]]
 
     # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X.values, y, test_size=0.2, random_state=42)
 
     # Instantiate the linear regression model
     model = LinearRegression()
@@ -65,24 +68,32 @@ def knn_prediction(data, year, height):
     data = data[cols]
     X = data[cols[:-1]]
     y = data[cols[-1]]
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X.values, y, test_size=0.2, random_state=42)
 
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
     # Train the KNN model
-    k = 5
+    k = 10
     knn_model = KNeighborsRegressor(n_neighbors=k)
     knn_model.fit(X_train, y_train)
 
     # Evaluate the model
     y_pred = knn_model.predict(X_test)
     mse = (abs(y_pred - y_test)).mean()
+    print("Year:", year)
     print("Mean Squared Error:", mse)
+
+    r2_score = (knn_model.score(X_test, y_test))
+    print(f'R^2 Score: {r2_score:.2f}')
+    
+    print()
 
     # Normalize the new data
     new_data = pd.DataFrame([[height]])
     prediction = knn_model.predict(new_data)
-
     # Make prediction using the normalized new data
-    print("Predicted points from KNN model:", prediction[0])
+    return prediction[0]
 
 def height_distribution(data):
     return (data['player_height'].quantile(0.25),
@@ -135,6 +146,7 @@ def main():
                 result['Year'].append(year)
                 result['Points'].append(res)
             plt.scatter(result['Year'], result['Points'])
+            plt.ylim(4.5, 15)
             plt.xlabel('Year')
             plt.ylabel('Average Points Per Game')
             plt.title('Average points per game as a function of the year at ' + str(height) + 'cm')
@@ -149,6 +161,7 @@ def main():
                 result['Year'].append(year)
                 result['Points'].append(res)
             plt.scatter(result['Year'], result['Points'])
+            plt.ylim(8, 10.5)
             plt.xlabel('Year')
             plt.ylabel('Average Points Per Game')
             plt.title('Average points per game as a function of the year at ' + str(height) + 'cm')
