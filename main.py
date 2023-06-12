@@ -41,17 +41,10 @@ def linear_regression(data, year, height):
     # Fit the model to the training data
     model.fit(X_train, y_train)
 
-    # Make predictions on the testing data
-    y_pred = model.predict(X_test)
-
-    """    
     # Evaluate the model
     r2_score = model.score(X_test, y_test)
-    mse = np.mean((y_pred - y_test) ** 2)
 
     print(f'R^2 Score: {r2_score:.2f}')
-    print(f'Mean Squared Error: {mse:.2f}')
-    """
 
     new_data = pd.DataFrame([[height]])
 
