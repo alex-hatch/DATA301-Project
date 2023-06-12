@@ -33,7 +33,7 @@ def linear_regression(data, year, height):
     y = data[cols[-1]]
 
     # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X.values, y, test_size=0.2, random_state=42)
 
     # Instantiate the linear regression model
     model = LinearRegression()
