@@ -1,8 +1,34 @@
+----------------------- FROM MAIN -----------------------
+
+commit 135c9f8a9d75ce768cf99870600ca8807bfecab2
+Author: alex-hatch <alexhatchh@gmail.com>
+Date:   Mon Jun 12 23:07:35 2023 -0700
+
+    log file
+
 commit acb1af015e75c694fabdba814fe55e4b6413fad2
 Author: alex-hatch <alexhatchh@gmail.com>
 Date:   Mon Jun 12 23:05:31 2023 -0700
 
     final code
+
+commit b7f504ad11bad4f107b0ba360d5001f8b3cd5231
+Author: alex-hatch <alexhatchh@gmail.com>
+Date:   Mon Jun 12 01:23:38 2023 -0700
+
+    fixed warning
+
+commit a80f5d07841693f2dcf3b7412881ae94de4c3b9d
+Author: alex-hatch <alexhatchh@gmail.com>
+Date:   Mon Jun 12 00:54:16 2023 -0700
+
+    linear regression error
+
+commit 491dfe94b51ab3c83769e692f03044373116d576
+Author: alex-hatch <alexhatchh@gmail.com>
+Date:   Sun Jun 11 21:22:46 2023 -0700
+
+    linear regression
 
 commit 1faf74107d5c957da36969bc9e0a5cb0b626f028
 Author: rishabb02 <67344869+rishabb02@users.noreply.github.com>
@@ -63,3 +89,158 @@ Author: alexhatch <alexhatchh@gmail.com>
 Date:   Wed May 31 11:25:22 2023 -0700
 
     first commit
+
+----------------------- FROM SCOTT BRANCH -----------------------
+commit 1e24272c422fed0731a6a59ac664d549210996d8
+Author: ScottHufschmidt <scottedward.huf@gmail.com>
+Date:   Mon Jun 12 21:40:18 2023 -0700
+
+    updated output for linear regression
+
+commit 84cba19d072084144cebdefecfb2b4f7572f065d
+Author: ScottHufschmidt <scottedward.huf@gmail.com>
+Date:   Mon Jun 12 03:03:47 2023 -0700
+
+    fixed the output
+
+commit 90eaaffa4d09a43d59063497c4439dfcaf933c8a
+Author: ScottHufschmidt <scottedward.huf@gmail.com>
+Date:   Sun Jun 11 23:25:34 2023 -0700
+
+    fixed up knn and included new linear regression
+
+commit 250b166dcfd86964c885f2079e4306867173452a
+Author: ScottHufschmidt <99775084+ScottHufschmidt@users.noreply.github.com>
+Date:   Sun Jun 11 15:52:08 2023 -0700
+
+    Add files via upload
+
+commit 83e62479b73083aaf909aec5f82696321ddc262b
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 11 14:16:50 2023 -0700
+
+    updated main
+
+commit 2650ec68727610250ee95fe1ecbcbea97b28ec77
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 4 16:37:16 2023 -0700
+
+    added linear regression model
+
+commit c1cd5178b12617156ab4ef7cf4408d97460ecb6b
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 4 16:13:43 2023 -0700
+
+    bug fixes
+
+commit 51189d56cb30fc7552c4f818f6c525794c757668
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 4 12:42:29 2023 -0700
+
+    added menu and fancy letters
+
+commit f1a67aae0da6884017b375f4f467bb48f2ade54c
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Fri Jun 2 11:40:09 2023 -0700
+
+    model for predicting HR for pitcher
+
+commit 40cc983cfa42908581482b65872dbe6b8b60c090
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Wed May 31 11:38:54 2023 -0700
+
+    data added
+
+commit 73418bb1d586ec2d0d28fbe6ec45316001b1298a
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Wed May 31 11:32:39 2023 -0700
+
+    intial file commit
+
+commit ec194649e9fe9d09c3671e2a613c1c4eaeb19515
+Author: Alex <89677719+alex-hatch@users.noreply.github.com>
+Date:   Wed May 31 11:28:21 2023 -0700
+
+    Update README.md
+
+commit 51076c60d0b689faa046838014e85be2a4f6aa83
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Wed May 31 11:25:22 2023 -0700
+
+    first commit
+
+
+----------------------- FROM RISHAB BRANCH -----------------------
+commit a0fc89827927c00fb40134661c9f51afecb0504f
+Author: rishabb02 <67344869+rishabb02@users.noreply.github.com>
+Date:   Mon Jun 12 22:50:38 2023 -0700
+
+    delete old code
+
+commit 43cda7f7216712450273ffcd7fea335a50432cb7
+Author: rishabb02 <67344869+rishabb02@users.noreply.github.com>
+Date:   Mon Jun 12 22:41:48 2023 -0700
+
+    all data visualizations added
+
+commit 1faf74107d5c957da36969bc9e0a5cb0b626f028
+Author: rishabb02 <67344869+rishabb02@users.noreply.github.com>
+Date:   Sun Jun 11 15:46:38 2023 -0700
+
+    inputted nba dataset
+
+commit 83e62479b73083aaf909aec5f82696321ddc262b
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 11 14:16:50 2023 -0700
+
+    updated main
+
+commit 2650ec68727610250ee95fe1ecbcbea97b28ec77
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 4 16:37:16 2023 -0700
+
+    added linear regression model
+
+commit c1cd5178b12617156ab4ef7cf4408d97460ecb6b
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 4 16:13:43 2023 -0700
+
+    bug fixes
+
+commit 51189d56cb30fc7552c4f818f6c525794c757668
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 4 12:42:29 2023 -0700
+
+    added menu and fancy letters
+
+commit f1a67aae0da6884017b375f4f467bb48f2ade54c
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Fri Jun 2 11:40:09 2023 -0700
+
+    model for predicting HR for pitcher
+
+commit 40cc983cfa42908581482b65872dbe6b8b60c090
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Wed May 31 11:38:54 2023 -0700
+
+    data added
+
+commit 73418bb1d586ec2d0d28fbe6ec45316001b1298a
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Wed May 31 11:32:39 2023 -0700
+
+    intial file commit
+
+commit ec194649e9fe9d09c3671e2a613c1c4eaeb19515
+Author: Alex <89677719+alex-hatch@users.noreply.github.com>
+Date:   Wed May 31 11:28:21 2023 -0700
+
+    Update README.md
+
+commit 51076c60d0b689faa046838014e85be2a4f6aa83
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Wed May 31 11:25:22 2023 -0700
+
+    first commit
+
+----------------------- FROM ALEX BRANCH -----------------------
