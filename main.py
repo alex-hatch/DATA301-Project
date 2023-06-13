@@ -4,9 +4,6 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import mean_squared_error
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import precision_score
-from sklearn.metrics import accuracy_score
-from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 from pyfiglet import Figlet
 import random
@@ -26,9 +23,6 @@ def linear_regression(data, year, height):
     # Filter the data frame
     data = data[cols]
 
-    # Normalize the data
-    # data = normalize(data, cols)
-
     # Extract features and target variable
     X = data[cols[:-1]]
     y = data[cols[-1]]
@@ -44,15 +38,13 @@ def linear_regression(data, year, height):
 
     # Make predictions on the testing data
     y_pred = model.predict(X_test)
+    mse = (abs(y_pred - y_test)).mean()
+    print("Year:", year)
+    print("Mean Squared Error:", mse)
 
-    """
-    # Evaluate the model
-    r2_score = model.score(X_test, y_test)
-    mse = np.mean((y_pred - y_test) ** 2)
-
+    r2_score = (model.score(X_test, y_test))
     print(f'R^2 Score: {r2_score:.2f}')
-    print(f'Mean Squared Error: {mse:.2f}')
-    """
+    print()
 
     new_data = pd.DataFrame([[height]])
 
@@ -70,9 +62,6 @@ def knn_prediction(data, year, height):
     y = data[cols[-1]]
     X_train, X_test, y_train, y_test = train_test_split(X.values, y, test_size=0.2, random_state=42)
 
-    scaler = StandardScaler()
-    X_train = scaler.fit_transform(X_train)
-    X_test = scaler.transform(X_test)
     # Train the KNN model
     k = 10
     knn_model = KNeighborsRegressor(n_neighbors=k)
@@ -86,10 +75,8 @@ def knn_prediction(data, year, height):
 
     r2_score = (knn_model.score(X_test, y_test))
     print(f'R^2 Score: {r2_score:.2f}')
-    
     print()
 
-    # Normalize the new data
     new_data = pd.DataFrame([[height]])
     prediction = knn_model.predict(new_data)
     # Make prediction using the normalized new data
