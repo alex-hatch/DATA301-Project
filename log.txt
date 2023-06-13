@@ -244,3 +244,80 @@ Date:   Wed May 31 11:25:22 2023 -0700
     first commit
 
 ----------------------- FROM ALEX BRANCH -----------------------
+commit b7f504ad11bad4f107b0ba360d5001f8b3cd5231
+Author: alex-hatch <alexhatchh@gmail.com>
+Date:   Mon Jun 12 01:23:38 2023 -0700
+
+    fixed warning
+
+commit a80f5d07841693f2dcf3b7412881ae94de4c3b9d
+Author: alex-hatch <alexhatchh@gmail.com>
+Date:   Mon Jun 12 00:54:16 2023 -0700
+
+    linear regression error
+
+commit 491dfe94b51ab3c83769e692f03044373116d576
+Author: alex-hatch <alexhatchh@gmail.com>
+Date:   Sun Jun 11 21:22:46 2023 -0700
+
+    linear regression
+
+commit 1faf74107d5c957da36969bc9e0a5cb0b626f028
+Author: rishabb02 <67344869+rishabb02@users.noreply.github.com>
+Date:   Sun Jun 11 15:46:38 2023 -0700
+
+    inputted nba dataset
+
+commit 83e62479b73083aaf909aec5f82696321ddc262b
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 11 14:16:50 2023 -0700
+
+    updated main
+
+commit 2650ec68727610250ee95fe1ecbcbea97b28ec77
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 4 16:37:16 2023 -0700
+
+    added linear regression model
+
+commit c1cd5178b12617156ab4ef7cf4408d97460ecb6b
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 4 16:13:43 2023 -0700
+
+    bug fixes
+
+commit 51189d56cb30fc7552c4f818f6c525794c757668
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Sun Jun 4 12:42:29 2023 -0700
+
+    added menu and fancy letters
+
+commit f1a67aae0da6884017b375f4f467bb48f2ade54c
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Fri Jun 2 11:40:09 2023 -0700
+
+    model for predicting HR for pitcher
+
+commit 40cc983cfa42908581482b65872dbe6b8b60c090
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Wed May 31 11:38:54 2023 -0700
+
+    data added
+
+commit 73418bb1d586ec2d0d28fbe6ec45316001b1298a
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Wed May 31 11:32:39 2023 -0700
+
+    intial file commit
+
+commit ec194649e9fe9d09c3671e2a613c1c4eaeb19515
+Author: Alex <89677719+alex-hatch@users.noreply.github.com>
+Date:   Wed May 31 11:28:21 2023 -0700
+
+    Update README.md
+
+commit 51076c60d0b689faa046838014e85be2a4f6aa83
+Author: alexhatch <alexhatchh@gmail.com>
+Date:   Wed May 31 11:25:22 2023 -0700
+
+    first commit
